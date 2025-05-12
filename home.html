@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial - Rocha Contabilidade</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="home-header">
+        <img src="logo.png" alt="Logo Rocha Contabilidade" class="logo-header">
+        <h1>Bem-vindo à Rocha Contabilidade</h1>
+        <button id="logoutButton" class="btn btn-logout">Sair</button>
+    </header>
+
+    <main class="home-content">
+        <section class="service-section" id="loans">
+            <div class="service-card">
+                <img src="loan-icon.png" alt="Ícone Empréstimos" class="service-icon">
+                <h2>Empréstimos para CNPJ MEI e LTDA</h2>
+                <p>
+                    Condições especiais para seu negócio:
+                    <br><strong>MEI:</strong> Empréstimos a partir de R$ 25.000.
+                    <br><strong>LTDA:</strong> Empréstimos de R$ 100.000 até R$ 1 milhão.
+                    <br>Nossa comissão de consultoria é de 15% sobre o valor do empréstimo liberado.
+                </p>
+                <button class="btn-details" data-modal-target="loanModal">Saiba Mais</button>
+            </div>
+        </section>
+
+        <section class="service-section" id="accounting">
+             <div class="service-card">
+                <img src="accounting-icon.png" alt="Ícone Contabilidade" class="service-icon">
+                <h2>Serviços Contábeis Especializados</h2>
+                <p>Assessoria contábil completa para sua empresa. Abertura e regularização de empresas, declarações, impostos, e consultoria financeira estratégica para otimizar sua gestão.</p>
+                <button class="btn-details" data-modal-target="accountingModal">Saiba Mais</button>
+            </div>
+        </section>
+
+        <section class="service-section" id="banks">
+            <div class="service-card">
+                <img src="bank-icon.png" alt="Ícone Bancos" class="service-icon">
+                <h2>Nossos Bancos Parceiros</h2>
+                <p>Trabalhamos em parceria com os principais bancos para oferecer as melhores soluções de crédito e financiamento para você e sua empresa:</p>
+                <ul class="bank-list">
+                    <li><img src="basa-logo.png" alt="BASA Logo" class="bank-logo"> BASA (Banco da Amazônia)</li>
+                    <li><img src="afeam-logo.png" alt="AFEAM Logo" class="bank-logo"> AFEAM (Agência de Fomento do Estado do Amazonas)</li>
+                    <li><img src="caixa-logo.png" alt="Caixa Logo" class="bank-logo"> Caixa Econômica Federal</li>
+                </ul>
+                <button class="btn-details" data-modal-target="banksModal">Conheça as Condições</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Rocha Contabilidade. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Modals -->
+    <div id="loanModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close-btn">&times;</span>
+            <h2>Detalhes sobre Empréstimos</h2>
+            <p>Na Rocha Contabilidade, facilitamos o acesso a crédito para impulsionar o seu negócio.</p>
+            <h3>Para Microempreendedores Individuais (MEI):</h3>
+            <ul>
+                <li><strong>Valores:</strong> Empréstimos a partir de R$ 25.000.</li>
+                <li><strong>Condições:</strong> Taxas competitivas e prazos flexíveis, analisados caso a caso.</li>
+                <li><strong>Requisitos Comuns:</strong> CNPJ MEI ativo, bom histórico de crédito, movimentação bancária compatível.</li>
+            </ul>
+            <h3>Para Empresas de Pequeno e Médio Porte (LTDA e outras):</h3>
+            <ul>
+                <li><strong>Valores:</strong> Empréstimos de R$ 100.000 até R$ 1 milhão.</li>
+                <li><strong>Finalidades:</strong> Capital de giro, investimento em expansão, aquisição de equipamentos, etc.</li>
+                <li><strong>Requisitos Comuns:</strong> CNPJ ativo, documentação contábil em dia, plano de negócios (para valores maiores), garantias podem ser solicitadas.</li>
+            </ul>
+            <h3>Nossa Consultoria:</h3>
+            <p>Cobramos uma taxa de consultoria de <strong>15% sobre o valor do empréstimo efetivamente liberado</strong>. Este valor cobre nossa assessoria em todo o processo, desde a análise de viabilidade, organização documental, até a negociação com as instituições financeiras parceiras.</p>
+            <p>Entre em contato para uma análise personalizada!</p>
+        </div>
+    </div>
+
+    <div id="accountingModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close-btn">&times;</span>
+            <h2>Serviços Contábeis Detalhados</h2>
+            <p>Oferecemos um portfólio completo de serviços contábeis para garantir a saúde financeira e a conformidade legal da sua empresa:</p>
+            <ul>
+                <li><strong>Abertura e Legalização de Empresas:</strong> Cuidamos de todo o processo burocrático para você iniciar seu negócio com segurança.</li>
+                <li><strong>Escrituração Contábil e Fiscal:</strong> Registros precisos, apuração de impostos (Simples Nacional, Lucro Presumido, Lucro Real), e entrega de todas as obrigações acessórias (SPED, DCTF, etc.).</li>
+                <li><strong>Departamento Pessoal:</strong> Folha de pagamento, admissões, rescisões, férias, e-Social e demais rotinas trabalhistas.</li>
+                <li><strong>Consultoria Tributária e Financeira:</strong> Planejamento tributário para redução legal de impostos, análise de indicadores financeiros, e suporte na tomada de decisões estratégicas.</li>
+                <li><strong>Regularização de Pendências:</strong> Auxílio na regularização de débitos fiscais e pendências junto aos órgãos públicos.</li>
+                <li><strong>Declaração de Imposto de Renda (PJ e PF):</strong> Elaboração e entrega de declarações com precisão.</li>
+            </ul>
+            <p>Nossa equipe de especialistas está pronta para entender suas necessidades e oferecer soluções personalizadas.</p>
+        </div>
+    </div>
+
+    <div id="banksModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close-btn">&times;</span>
+            <h2>Parceria com Bancos e Instituições Financeiras</h2>
+            <p>Nossa rede de parceiros financeiros é fundamental para conectar sua empresa às melhores oportunidades de crédito e serviços bancários. Atuamos como facilitadores, buscando as condições mais vantajosas para suas necessidades.</p>
+            
+            <h3><img src="basa-logo.png" alt="BASA Logo" class="bank-logo-modal"> BASA (Banco da Amazônia)</h3>
+            <p>O BASA é um banco de desenvolvimento focado em fomentar a economia da Região Amazônica. Oferece linhas de crédito específicas para projetos de investimento, capital de giro e desenvolvimento sustentável, com taxas e prazos atrativos para empresas localizadas na Amazônia Legal.</p>
+
+            <h3><img src="afeam-logo.png" alt="AFEAM Logo" class="bank-logo-modal"> AFEAM (Agência de Fomento do Estado do Amazonas)</h3>
+            <p>A AFEAM tem como objetivo promover o desenvolvimento socioeconômico do Estado do Amazonas, oferecendo crédito para micro, pequenas e médias empresas, além de empreendedores individuais. Suas linhas de financiamento são voltadas para diversos setores da economia local.</p>
+
+            <h3><img src="caixa-logo.png" alt="Caixa Logo" class="bank-logo-modal"> Caixa Econômica Federal</h3>
+            <p>A Caixa é um dos maiores bancos públicos do Brasil, com uma vasta gama de produtos e serviços para pessoas físicas e jurídicas. Oferece desde linhas de crédito para capital de giro e investimento, até financiamentos imobiliários e consórcios, com condições competitivas no mercado.</p>
+            
+            <p>Através da nossa consultoria, analisamos o perfil da sua empresa e suas necessidades para direcioná-lo à instituição e linha de crédito mais adequadas, auxiliando em todo o processo de negociação e formalização.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
